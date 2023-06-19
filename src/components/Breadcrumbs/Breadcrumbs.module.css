@@ -1,0 +1,22 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs span {
+  font-size: 14px;
+  color: #333;
+}
+
+.breadcrumbs span:after {
+  content: " /";
+  margin-right: 3px;
+}
+
+.breadcrumbs span:last-child {
+  font-weight: bold;
+}
+
+.breadcrumbs span:last-child:after {
+  content: " ";
+}
