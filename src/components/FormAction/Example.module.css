@@ -1,0 +1,28 @@
+.example-module {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .example-module {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    margin: 8px 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  ul {
+    padding: 0;
+    margin: 5px 0;
+  }
+  .example-module {
+    margin-top: 2px;
+    border: 1px solid var(--another);
+    padding: 0 50px;
+    border-radius: 0 0 10px 10px;
+  }
+}
