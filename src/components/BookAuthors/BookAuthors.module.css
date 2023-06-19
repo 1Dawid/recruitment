@@ -1,0 +1,37 @@
+table {
+  border: 1px solid #ccc;
+}
+
+.breadcrumbs-all > span::after {
+  content: "/ ";
+}
+
+span:last-child::after {
+  content: " ";
+}
+
+.breadcrumbs-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: italic;
+}
+
+.breadcrumb {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.es {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+  .breadcrumb {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .breadcrumbs-all {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
