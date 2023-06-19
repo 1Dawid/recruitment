@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #3aafa9;
+  --secondaty-color: #2b7a78;
+  --text-primary: #def2f1;
+  --text-secondary: #17252a;
+  --another: #feffff;
+
+  --box-shadow-color: rgba(23, 37, 42, 0.18);
+
+  --button-primary: #17252a;
+
+  --primary-font-family: "Arvo";
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-family: var(--primary-font-family);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--secondaty-color);
+  padding: 8px;
+  color: var(--text-secondary);
+}
+
+p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: var(--text-primary);
+}
+
+.searchConsole {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.all-content {
+  height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 450px;
+  }
+  table {
+    font-size: 15px;
+  }
+  .searchConsole {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 400px;
+  }
+  th,
+  td {
+    padding: 3px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 290px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  th,
+  td {
+    padding: 1px;
+    font-size: 11px;
+  }
+  .searchConsole {
+    margin-bottom: 5px;
+  }
+}
